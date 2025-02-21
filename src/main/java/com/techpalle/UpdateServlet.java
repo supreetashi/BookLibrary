@@ -73,8 +73,7 @@ public class UpdateServlet extends HttpServlet {
                     
                     out.println("<tr " + highlightClass + ">");
                     out.println("<td>" + rs.getInt("bid") + "</td>");
-//                    out.println("<td>" + rs.getString("bname") + "</td>");
-                    // Append "Updated" text inside the Book Name column
+
                     if (bookId == id) {
                         out.println("<td><div class='name-container'><span class='book-name'>" + rs.getString("bname") + 
                                     "</span><span class='updated-sign'>Updated</span></div></td>");
