@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BookLibrary</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form action="RegisterServlet" method="post">
+    <table >
+            <tr>
+                <td>Book Name:</td>
+                <td><input type="text" placeholder="Enter book name" name="tbname" required></td>
+            </tr>
+            <tr>
+                <td>Book Edition:</td>
+                <td><input type="number" placeholder="Enter edition" name="tbedition" required></td>
+            </tr>
+            <tr>
+                <td>Book Price:</td>
+                <td><input type="number" placeholder="Enter price" name="tbprice" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" value="Cancel">
+                </td>
+            </tr>
+            
+            <tr>
+            <td>
+            <a href="BooklistServlet">Update Details</a>
+            </td>
+            
+            <td>
+            <a href="RetrieveServlet">Book List</a>
+            </td>
+            </tr>
+           
+        </table>
+</form>
+</body>
+</html>
