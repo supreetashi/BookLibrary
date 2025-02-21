@@ -46,7 +46,7 @@ public class RegisterServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-//		String id = request.getParameter("bid");
+
 		String name= request.getParameter("tbname");
 		String edition= request.getParameter("tbedition");
 		String price= request.getParameter("tbprice");
@@ -57,7 +57,7 @@ public class RegisterServlet extends HttpServlet {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/booklib","root","ramashi53");
-//			String id = request.getParameter("bid");
+
 			String query="insert into booklist1(bname,bedition,bprice) values(?,?,?)";
 			PreparedStatement s=con.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
 			s.setString(1,name);
@@ -70,7 +70,7 @@ public class RegisterServlet extends HttpServlet {
 	            if (affectedRows > 0) {
 	                ResultSet rs = s.getGeneratedKeys();
 	                if (rs.next()) {
-	                    id = rs.getInt(1); // Retrieve the generated ID
+	                    id = rs.getInt(1); 
 	                }
 	                rs.close();
 	            }
