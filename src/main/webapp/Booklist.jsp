@@ -16,11 +16,6 @@
     String edition = (String) request.getAttribute("tbedition");
     String price = (String) request.getAttribute("tbprice");
 
-   /* out.println("<p>bid: " + bid + "</p>");
-    out.println("<p>Name: " + name + "</p>");
-    out.println("<p>Edition: " + edition + "</p>");
-    out.println("<p>Price: " + price + "</p>"); */
-
     if (bid == null || name == null || edition == null || price == null) {
         out.println("<h3>Error: Some attributes are missing!</h3>");
     }
