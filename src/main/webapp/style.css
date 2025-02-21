@@ -1,12 +1,12 @@
-/* 🌟 Global Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    font-family: 'Poppins', sans-serif; 
 }
 
-/* 📚 Modern Library Background */
+
 body {
     background: url('images/library.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
     position: relative;
 }
 
-/* 🌫 Glassmorphism Overlay */
+
 body::before {
     content: "";
     position: fixed;
@@ -23,31 +23,31 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    background: rgba(0, 0, 0, 0.5); 
     z-index: -1;
-    backdrop-filter: blur(5px); /* Glass effect */
+    backdrop-filter: blur(5px); 
 }
 
-/* 🌟 Modern White Headers */
+
 h1, h2, h3, h4, h5, h6 {
-    color: white; /* Pure white color */
+    color: white;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Soft glow effect */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
     margin-bottom: 15px;
 }
 
-/* 🚀 Subtle Hover Effect for Headers */
+
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     text-shadow: 0 0 12px rgba(255, 255, 255, 1), 
-                 0 0 18px rgba(200, 200, 255, 0.8); /* Enhanced glow */
-    transform: scale(1.02); /* Slight zoom on hover */
+                 0 0 18px rgba(200, 200, 255, 0.8); 
+    transform: scale(1.02); 
     transition: all 0.3s ease-in-out;
 }
 
-/* 📝 Modern Form */
+
 form {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
@@ -65,7 +65,7 @@ form:hover {
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* 🎨 Input Fields with Glowing Effect */
+
 input[type="text"],
 input[type="number"] {
     width: 100%;
@@ -82,7 +82,7 @@ input[type="number"] {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-/* ✨ Glowing Outline on Hover and Focus */
+
 input[type="text"]:hover,
 input[type="number"]:hover,
 input[type="text"]:focus,
@@ -94,7 +94,7 @@ input[type="number"]:focus {
     transform: scale(1.02);
 }
 
-/* 🚀 Stylish Buttons */
+
 input[type="submit"],
 input[type="reset"] {
     width: 100%;
@@ -116,7 +116,7 @@ input[type="reset"]:hover {
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.6);
 }
 
-/* 📊 Modern Table */
+
 table {
     margin: 30px auto;
     border-collapse: collapse;
@@ -160,7 +160,7 @@ tr:hover {
     transition: 0.3s ease-in-out;
 }
 
-/* 🏆 Highlighted Row */
+
 .highlight-row {
     font-weight: bold;
     background: linear-gradient(135deg, #ffbb00, #ff8c00);
@@ -171,26 +171,26 @@ tr:hover {
     background: linear-gradient(135deg, #ffdd44, #ffbb00);
 }
 
-/* 📌 Book Name Container (Ensures Proper Alignment) */
+
 .name-container {
     display: flex;
-    justify-content: space-between; /* Aligns items within */
+    justify-content: space-between; 
     align-items: center;
     position: relative;
     width: 100%;
-    padding-right: 15px; /* Adds spacing for updated sign */
+    padding-right: 15px; 
 }
 
-/* 📖 Centered Book Name */
+
 .book-name {
-    flex-grow: 1; /* Allows it to take available space */
+    flex-grow: 1; 
     font-weight: bold;
     font-size: 18px;
-    color: #ffffff; /* Ensure white color for visibility */
-    text-align: center; /* Align text to the left */
+    color: #ffffff; 
+    text-align: center; 
 }
 
-/* 🔔 Updated Sign (Aligned to Right) */
+
 .updated-sign {
     font-size: 14px;
     font-weight: bold;
@@ -198,13 +198,13 @@ tr:hover {
     background: #5d3a1a;
     padding: 5px 10px;
     border-radius: 5px;
-    margin-left: auto; /* Pushes it to the right */
+    margin-left: auto; 
     animation: fadeOut 3s forwards;
-    white-space: nowrap; /* Prevents text from wrapping */
+    white-space: nowrap; 
 }
 
 
-/* 🔥 Modern Buttons */
+
 button {
     padding: 12px 22px;
     border: none;
@@ -223,7 +223,7 @@ button:hover {
     box-shadow: 0 5px 15px rgba(255, 69, 0, 0.6);
 }
 
-/* 🌟 Modern & Stylish Links */
+
 a {
     display: inline-block;
     margin-top: 15px;
@@ -235,7 +235,7 @@ a {
     transition: color 0.3s ease-in-out;
 }
 
-/* 🔥 Underline Animation */
+
 a::after {
     content: "";
     position: absolute;
@@ -249,9 +249,9 @@ a::after {
     transform-origin: left;
 }
 
-/* 🚀 Hover Effect */
+
 a:hover {
-    color: #ff4500; /* Vibrant modern orange */
+    color: #ff4500; 
     text-shadow: 0 0 8px rgba(255, 69, 0, 0.8);
 }
 
@@ -259,14 +259,14 @@ a:hover::after {
     transform: scaleX(1);
 }
 
-/* ✨ Glowing Neon Effect on Click */
+
 a:active {
     text-shadow: 0 0 12px rgba(255, 140, 0, 1), 
                  0 0 18px rgba(255, 69, 0, 0.9);
 }
 
 
-/* 📱 Responsive Design */
+
 @media (max-width: 768px) {
     form {
         width: 90%;
