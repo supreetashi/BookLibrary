@@ -24,7 +24,7 @@ public class DeleteServlet extends HttpServlet {
     }
     
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);  // Redirect GET request to POST handler
+        doPost(request, response);  
     }
 
 
